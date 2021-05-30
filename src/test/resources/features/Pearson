@@ -1,0 +1,10 @@
+Feature: Search for 3rd record on second result page for "Spanish"
+
+  Scenario: Search for result
+    Given I am on the Pearson start page
+    When Close cookies
+    And I click on search field
+    And Type in Spanish
+    And Click on search button
+    And Click on Next button
+    Then Click on 3rd link on the list
