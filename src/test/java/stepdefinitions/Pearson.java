@@ -52,7 +52,6 @@ public class Pearson {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//a[@class='productItem__name'])[3]")));
         driver.findElement(By.xpath("(//a[@class='productItem__name'])[3]")).click();
-        Assert.assertEquals("/pearson_interims_2003_presentat", driver.getTitle());
 
     }
 }
